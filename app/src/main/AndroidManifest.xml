@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mg.studio.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Login"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Register"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity android:name=".LifecycleMain"
+            android:label="@string/lifecycle"/>
+        <activity android:name=".LifecycleActivity"
+            android:label="@string/lifecycle"/>
+        <activity android:name=".LifecycleDialog"
+            android:label="@string/lifecycle"/>
+        <activity android:name=".UsernameMain"
+            android:label="@string/username"/>
+        <activity android:name=".UserfinalMain"
+            android:label="@string/username_final"/>
+        <activity android:name=".LayoutMain"
+            android:label="@string/layout"/>
+        <activity android:name=".LinearActivity"
+            android:label="Linear Layout"/>
+        <activity android:name=".RelativeActivity"
+            android:label="Relative Layout"/>
+        <activity android:name=".LayoutfinalMain"
+            android:label="@string/layout_final"/>
+        <activity android:name=".ButtondesignMain"
+            android:label="@string/button_design"/>
+        <activity android:name=".ButtontoastMain"
+            android:label="@string/button_toast"/>
+        <activity android:name=".ButtonintentMain"
+            android:label="@string/button_intent"/>
+        <activity android:name=".StartActivityMain"
+            android:label="@string/button_startactivity"/>
+        <activity android:name=".StartActivitySecond"
+            android:label="@string/button_startactivity"/>
+        <activity android:name=".StartActExtraMain"
+            android:label="@string/button_startactivity_extra"/>
+        <activity android:name=".StartActExtraSecond"
+            android:label="@string/button_startactivity_extra"/>
+        <activity android:name=".ImageButtonMain"
+            android:label="@string/imagebutton"/>
+        <activity android:name=".EditTextMain"
+            android:label="@string/edittext"/>
+        <activity android:name=".RadiobtnListenerMain"
+            android:label="@string/radiobuttons_listener"/>
+        <activity android:name=".RadiobtnOnclickMain"
+            android:label="@string/radiobuttons_onclick"/>
+        <activity android:name=".ListviewMain"
+            android:label="@string/listview"/>
+        <activity android:name=".GetColorMain"
+            android:label="@string/getcolor"/>
+        <activity android:name=".GradientBackgroundMain"
+            android:label="@string/gradientbackground"/>
+        <activity android:name=".AppIntentCallerMain"
+            android:label="@string/implicitintent"/>
+        <activity android:name=".AppIntentRecieverMain"
+            android:label="@string/implicitintent"/>
+        <activity android:name=".AppIntentRecieverSecond"
+            android:label="@string/implicitintent">
+            <intent-filter>
+                <action android:name="mg.studio.intentreceiver.ACTION"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".WeatherMain"
+            android:label="@string/weather"/>
+        <activity android:name=".ListView2Main"
+            android:label="@string/listview2"/>
+        <activity android:name=".ListViewCAMain"
+            android:label="@string/listviewcustomadapter"/>
+        <activity android:name=".AudiorRecorder"
+            android:label="@string/audiorecorder"/>
+        <activity android:name=".DataBaseMain"
+            android:label="@string/database"/>
+        <activity android:name=".FragmentMain"
+            android:label="@string/fragemntone"/>
+        <activity android:name=".WebViewMain"
+            android:label="@string/webview"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ServiceDemoMain"
+            android:label="@string/sevicedemo"/>
+        <activity android:name=".ServiceMain"
+            android:label="@string/service"/>
+        <activity android:name=".FingerprintMain"
+            android:label="@string/fingerprint"/>
+        <activity android:name=".PrivateDirectory"
+            android:label="@string/appprivatedirectory"/>
+        <activity android:name=".AssetsMain"
+            android:label="@string/assetsfolder"/>
+        <activity android:name=".IntentExtraMain"
+            android:label="@string/intentextras"/>
+        <activity android:name=".IntentExtraNew"
+            android:label="@string/intentextras"/>
+        <service android:name=".MydemoService"
+            android:process=":SeparateProcess"/>
+        <service
+            android:name=".MyService"
+            android:process=":newService"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>
